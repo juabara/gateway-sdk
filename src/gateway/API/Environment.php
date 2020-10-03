@@ -29,11 +29,11 @@
          *
          */
         //const SANDBOX_URL = "http://0.0.0.0:8888";
-        const SANDBOX_URL = "http://54.232.0.201";
+        const SANDBOX_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8001";
         /**
          *
          */
-        const PRODUCTION_URL = "";
+        const PRODUCTION_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8002";
 
         /**
          * @return string
