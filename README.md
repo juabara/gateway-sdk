@@ -57,11 +57,11 @@ Recursos disponíveis
             ->setCustomerIdentity("999999999")
             ->setName("John Doe")
             ->setCpf("30212212212")
-            ->setEmail("brunopaz@test.com");
+            ->setEmail("JohnDoe@test.com");
 
         // SET FRAUD DATA OBJECT
         $transaction->FraudData()
-            ->setName("Bruno Paz")
+            ->setName("John Doe")
             ->setDocument("30683882828")
             ->setEmail("JohnDoe@g.com")
             ->setAddress("Rua test")
