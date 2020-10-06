@@ -44,10 +44,10 @@ Recursos disponíveis
             ->setCurrency(Currency::BRAZIL_BRAZILIAN_REAL_BRL)
             ->setCountry("BRA")
             ->setNumberOfPayments(2)
-            ->setSoftDescriptor("Bruno paz")
+            ->setSoftDescriptor("John Doe")
             ->Card()
                 ->setBrand(Brand::VISA)
-                ->setCardHolder("Bruno paz")
+                ->setCardHolder("John Doe")
                 ->setCardNumber("2223000148400010")
                 ->setCardSecurityCode("123")
                 ->setCardExpirationDate("202001");
@@ -55,7 +55,7 @@ Recursos disponíveis
         // SET CUSTOMER
         $transaction->Customer()
             ->setCustomerIdentity("999999999")
-            ->setName("Bruno")
+            ->setName("John Doe")
             ->setCpf("30212212212")
             ->setEmail("brunopaz@test.com");
 
@@ -63,7 +63,7 @@ Recursos disponíveis
         $transaction->FraudData()
             ->setName("Bruno Paz")
             ->setDocument("30683882828")
-            ->setEmail("brunopaz@g.com")
+            ->setEmail("JohnDoe@g.com")
             ->setAddress("Rua test")
             ->setAddress2("Apartamento 23")
             ->setAddressNumber("300")
@@ -160,9 +160,9 @@ $transaction->Order()
 ```php
 $transaction->Customer()
     ->setCustomerIdentity("999999999")
-    ->setName("Bruno")
+    ->setName("JohnDoe")
     ->setCpf("30212212212")
-    ->setEmail("bruno@brunopaz.com");
+    ->setEmail("John@doe.com");
 ```
 
 ### Informando a forma de pagamento
@@ -179,10 +179,10 @@ $transaction->Payment()
     ->setCurrency(Currency::BRAZIL_BRAZILIAN_REAL_BRL)
     ->setCountry("BRA")
     ->setNumberOfPayments(2)
-    ->setSoftDescriptor("Bruno paz")
+    ->setSoftDescriptor("John Doe")
     ->Card()
             ->setBrand(Brand::VISA)
-            ->setCardHolder("Bruno paz")
+            ->setCardHolder("John Doe")
             ->setCardNumber("2223000148400010")
             ->setCardSecurityCode("123")
             ->setCardExpirationDate("202001");
