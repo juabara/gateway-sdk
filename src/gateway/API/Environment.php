@@ -32,7 +32,7 @@
         /**
          *
          */
-        const PRODUCTION_URL = "http://54.232.0.201:8011";
+        const PRODUCTION_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8011";
 
         /**
          * @return string
