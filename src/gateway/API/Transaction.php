@@ -238,9 +238,11 @@
          * @param mixed $urlReturn
          * @return Transaction
          */
-        public function setUrlReturn($urlReturn)
+        public function setUrlReturn($urlReturn = null)
         {
-            $this->urlReturn = $urlReturn;
+            if(!empty($urlReturn))
+                $this->urlReturn = $urlReturn;
+
             return $this;
         }
 
