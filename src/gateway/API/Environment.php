@@ -28,7 +28,6 @@
         /**
          *
          */
-        //const SANDBOX_URL = "http://0.0.0.0:8888";
         const SANDBOX_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8001";
         /**
          *
