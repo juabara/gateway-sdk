@@ -441,10 +441,8 @@
                 throw new Exception('setSoftDescriptor must be a string!');
             }
 
-            if (strlen($softDescriptor) >= 13) {
-                throw new Exception('setSoftDescriptor must be less than 13 characters');
+            $softDescriptor = strtoupper(substr(trim($softDescriptor), 0, 12));
 
-            }
             $this->softDescriptor = $softDescriptor;
             return $this;
         }
