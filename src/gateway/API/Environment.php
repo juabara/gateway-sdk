@@ -28,11 +28,11 @@
         /**
          *
          */
-        const SANDBOX_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8001";
+        const SANDBOX_URL = "https://sandbox-gateway-api.kesterpay.com";
         /**
          *
          */
-        const PRODUCTION_URL = "http://kesterpay-382608800.sa-east-1.elb.amazonaws.com:8011";
+        const PRODUCTION_URL = "https://gateway-api.kesterpay.com";
 
         /**
          * @return string
