@@ -69,7 +69,6 @@
         private function send($url_path, $method, $json = NULL)
         {
 
-            $response = "";
             $curl = curl_init($this->getFullUrl($url_path));
 
             $defaultCurlOptions = array(
@@ -97,7 +96,7 @@
             try {
                 $response = curl_exec($curl);
             } catch (Exception $e) {
-                print "ERROR1";
+                print $e->getMessage();exit;
             }
             if (curl_getinfo($curl, CURLINFO_HTTP_CODE) == 500) {
                 throw new Exception("Internal Server Error", CURLINFO_HTTP_CODE);
@@ -111,7 +110,10 @@
             }
             curl_close($curl);
 
-            return json_decode($response, true);
+            if(json_decode($response, true))
+                return json_decode($response, true);
+            else
+                throw new Exception($response, CURLINFO_HTTP_CODE);
         }
 
         /**
