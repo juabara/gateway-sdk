@@ -212,6 +212,10 @@
                 throw new Exception('setCardExpirationDate must be less than 7 characters - YYYYMM');
             }
 
+            if (strlen($cardExpirationDate) < 6) {
+                throw new Exception('setCardExpirationDate must be more than 6 characters - YYYYMM');
+            }
+
             $this->cardExpirationDate = $cardExpirationDate;
             return $this;
         }
